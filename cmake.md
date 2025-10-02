@@ -37,7 +37,10 @@ to not do so, I'd recommend setting the flags the same. If you do not have write
   * For me, this was `make -j4`
 6. Run the test suite (not technically necessary, but good practice)
   * For me, this was `./bin/ctest`
-7. If all tests pass or you just want to install it and go, then you can install it to whatever
+  * The purpose of this test is, in my opinion, to know the limitations of using this version of 
+      cmake, if you don't create CMAKE projects, then this will likely not be useful to you. So you
+      can skip it.
+7. If all tests pass or you are ready to install it and go, then you can install it to whatever
    directory you chose
   * For me, this was `make install`
 8. To use this cmake version, you will need to call this new binary directly, so when compiling
